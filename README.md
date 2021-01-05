@@ -155,5 +155,6 @@ The Build-System (Mac-Mini) has only one certificate in the keychain.
 The application cannot be launched on Big Sur. The error messages:
 
 - rejected (bundle format is ambiguous (could be app or framework))
+  => in subcomponent .../Contents/Frameworks/Electron Framework.framework
 - The OS-UI-Dialog says: 'The application can't be open'
 
