@@ -28,7 +28,8 @@ The Build-System (Mac-Mini) use has only one certificate in the keychain.
 
 #### Logs:
 
-* Apple notarize logs: *
+*Apple notarize logs:*
+
 `
 {
 "logFormatVersion": 1,
@@ -66,7 +67,7 @@ The Build-System (Mac-Mini) use has only one certificate in the keychain.
 }
 `
 
-* Build-Log *
+*Build-Log:*
 
 `
 > electron-forge package
