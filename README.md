@@ -24,7 +24,7 @@ with the following options:
 - appleId: process.env.APPLE_ID,
 - appleIdPassword: process.env.APPLE_ID_PASSWORD
 
-The Build-System (Mac-Mini) use has only one certificate in the keychain.
+The Build-System (Mac-Mini) has only one certificate in the keychain.
 
 #### Logs:
 
@@ -115,14 +115,14 @@ The Build-System (Mac-Mini) use has only one certificate in the keychain.
 >Tue, 05 Jan 2021 13:08:06 GMT electron-osx-sign Signing... /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak  
 >  
 >Tue, 05 Jan 2021 13:08:31 GMT electron-osx-sign Signing... /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app  
->Tue, 05 Jan 2021 13:08:31 GMT electron-osx-sign Executing... codesign --sign 9D4A5701E19D48E4855579F98C34772A300F183B --force --timestamp --options library,runtime --entitlements ./static/entitlements.plist /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app  
+>Tue, 05 Jan 2021 13:08:31 GMT electron-osx-sign Executing... **codesign --sign 9D4A5701E19D48E4855579F98C34772A300F183B --force --timestamp --options library,runtime --entitlements ./static/entitlements.plist /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app**  
 >Tue, 05 Jan 2021 13:08:32 GMT electron-osx-sign Verifying...  
 >Tue, 05 Jan 2021 13:08:32 GMT electron-osx-sign Verifying application bundle with codesign...  
 >Tue, 05 Jan 2021 13:08:32 GMT electron-osx-sign Executing... codesign --verify --deep --strict --verbose=2 /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app  
 >  
 >... more signing...  
 >  
->Tue, 05 Jan 2021 13:08:33 GMT electron-osx-sign Verified.  
+>Tue, 05 Jan 2021 13:08:33 GMT electron-osx-sign **Verified**.  
 >Tue, 05 Jan 2021 13:08:33 GMT electron-osx-sign Displaying entitlements...  
 >Tue, 05 Jan 2021 13:08:33 GMT electron-osx-sign Executing... codesign --display --entitlements :- /var/folders/zd/tx5d10fd2vq1cws7z4y9qncc0000gn/T/electron-packager/darwin-x64/test-forge-darwin-x64/test-forge.app  
 >Tue, 05 Jan 2021 13:08:33 GMT electron-osx-sign Entitlements:  
