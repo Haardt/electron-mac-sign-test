@@ -1,14 +1,14 @@
 {
-  "name": "test-forge",
-  "productName": "test-forge",
+  "name": "test-builder",
+  "productName": "test-builder",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
+    "start": "electron .",
+    "package": "electron-builder",
+    "make": "electron-builder --dir",
+    "publish": "electron-builder",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
@@ -18,13 +18,31 @@
   },
   "license": "MIT",
   "build": {
-    "appId": "de.starface.STARFACE-Client"
+    "afterSign": "scripts/notarize.js",
+    "appId": "xx",
+    "buildVersion": "1.0.0.",
+    "asar": false,
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "zip",
+      "entitlements": "./static/entitlements.plist",
+      "entitlementsInherit": "./static/entitlements.plist",
+      "provisioningProfile": "./xx",
+      "type": "distribution",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false
+    },
+    "linux": {
+      "target": "appImage"
+    },
+    "appImage": {}
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
+    "electron": "11.1.1",
     "electron-builder": "^22.9.1",
-    "electron": "11.1.1"
+    "electron-notarize": "^1.0.0"
   }
 }
